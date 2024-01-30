@@ -1,0 +1,413 @@
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+*{
+  font-family: 'Didact Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+
+}
+section{
+  padding: 4.5rem 0 1.5rem;
+}
+
+
+img {
+  width: 100%;
+}
+
+body{
+  color: rgb(18, 21, 22)
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: pink;
+  box-shadow: 0 8px 11px rgb(14, 55, 54/ 30%);
+  padding: 20px 100px;
+  transition: 0.5s;
+   
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  column-gap: 0.5rem;
+}
+
+.logo .bx{
+  font-size: 24px;
+  color: skyblue; 
+}
+
+.navbar {
+  display: flex;
+  column-gap: 0.5rem;
+
+}
+
+.navbar a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  padding: 0.5rem 1rem;
+
+}
+
+.navbar a:hover{
+  background: rgb(95, 226, 191);
+  border-radius: 5rem;
+  color: beige;
+  transition: back;
+
+}
+
+#menu-icon{
+  font-size: 24px;
+  cursor: pointer;   
+  z-index: 10001;
+  display: none;
+  
+
+}
+
+/*Swiper*/
+.container{
+  position: relative;
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  /*background: (choco\ color.jpg);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+}
+.container img{
+width: 400px;
+position: absolute;
+bottom: -500px;
+right: 200px;
+}
+
+.hometext{
+padding: 0 150px;
+}
+
+.home-text span{
+font-weight: 400;
+text-transform: uppercase;
+color: white;
+}
+
+.home-text h1{
+font-size: 2.4rem;
+font-weight: 700;
+margin-bottom: 1rem;
+
+}
+
+.btn{
+padding: 0.6rem 1rem;
+background: pink;
+color: aliceblue;
+font-weight: 400;
+border-radius: 5rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+column-gap: 0.5rem;
+max-width: 160px;
+}
+
+
+/* Header Banner Styles */
+
+.heading.span{
+  color: pink;
+}
+
+.catego{
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+}
+
+.categories-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.categories-container .box{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 0.5rem;
+
+}
+
+.categories-container .box img{
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  object-position: center;
+
+}
+
+.categories-container .box .h2{
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+
+.categories-container .box span{
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.categories-container .box .bx{
+  padding: 10px;
+  background-color:aquamarine;
+  color: black;
+  border-radius: 5rem;
+  margin-top: 2rem;
+  position: absolute;
+  bottom: -8%;
+}
+
+.about{
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, auto));
+  align-items: center;
+  gap: 1.5rem;
+
+}
+
+.about-text span{
+  font-family: 600;
+  text-transform: uppercase;
+  color: plum;
+
+}
+
+.about-text p {
+  margin: 0.5rem  1rem;
+}
+
+.customers{
+max-width: 968px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.customers h2{
+text-align: center;
+font-size: 1.6rem;
+font-weight: 600;
+}
+
+.customers-container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+gap: 1.5rem;
+margin-top: 2rem;
+align-items: center;
+
+}
+
+.customers-container .box{
+padding: 20px;
+box-shadow: 1px 2px 11px 4px rgb(55, 55, 54/ 15%);
+border-radius: 0.5rem;
+border-bottom: 7px solid palevioletred;
+}
+
+.customers-container .box:hover{
+transform: translateY(10px);
+transition: 0.2s all liner;
+}
+
+.customers-container .box .bx{
+font-size: 24px;
+}
+
+.customers-container .box .stars .bx {
+font-size: 0.935rem;
+
+}
+
+.review-profile{
+display: flex;
+align-items: center;
+margin-top: 1rem;
+column-gap: 0.5rem;
+}
+
+.review-profile img{
+width: 60px;
+height: 60px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.footer{
+max-width: 968px;
+margin-left: auto;
+margin-right: auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+gap: 1.5rem;
+margin-top: 2rem;
+background: #fef4ea;
+border-radius: 0.5rem;
+padding: 20px;
+}
+
+.footer-box{
+display: flex;
+flex-direction: column;
+
+}
+
+.footer-box{
+font-size: 0.938rem;
+margin: 0.5rem 0 1rem;
+}
+
+.social{
+display: flex;
+align-items: center;
+column-gap: 0.5rem;
+
+}
+
+.social .bx{
+padding: 10px;
+background: peachpuff;
+color:palevioletred ;
+border-radius: 5rem;
+font-size: 20px;
+}
+
+.social .bx:hover{
+background: gray;
+color: pink;
+transition: 0.2s all linear;
+
+}
+
+.footer-box h2{
+font-size: 1.1rem;
+font-weight: 600;
+margin-bottom: 1rem;
+}
+
+.footer-box a {
+color: pink;
+margin-bottom: 1rem;
+}
+
+.footer-box a:hover{
+color: bisque;
+}
+
+.footer-box form{
+border-bottom: 1px solid pink;
+padding: 10px;
+display: flex;
+align-items: center;
+column-gap: 0.5rem;
+}
+
+.footer-box form input{
+background: transparent;
+border: none;
+outline: none;
+}
+
+.footer-box form .bx{
+font-size: 20px;
+ color: palevioletred;
+ cursor: pointer;
+}
+
+.footer-box form .bxs-envelope{
+color: antiquewhite;
+}
+
+
+@media (max-width: 1080px){
+header{
+  padding: 18px 60px;
+}
+.home-text{
+  padding: 0 100px;
+
+}
+.container img {
+  right: 100px;
+}
+}
+
+@media (max-width: 991px){
+header{
+padding: 18px 4%;
+}
+section {
+padding: 50px 4%;
+}
+.home-text h1{
+font-size: 2rem;
+}
+
+.swiper-button-next, 
+.swiper-button-prev{
+margin: 0;
+}
+}
+
+@media (max-width: 852px){
+header{
+  padding: 12px 4%;
+}
+#menu-icon{
+  display: initial;
+
+}
+.navbar{
+  position: absolute;
+  top: 100;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background: beige;
+  
+}
+}
